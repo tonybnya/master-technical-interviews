@@ -21,7 +21,7 @@ class SinglyLinkedList:
         """Initialize the Singly Linked List"""
         self.root: Optional[Node] = None
 
-    def insert_at_begin(self, value: int):
+    def insert_at_begin(self, value: int) -> None:
         """Insert a value at the beginning."""
         node: Node = Node(value)
 
