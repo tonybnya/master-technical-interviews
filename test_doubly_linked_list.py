@@ -28,6 +28,19 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.assertIsNone(self.dll.root.prevnode)
         self.assertEqual(self.dll.get_size(), 2)
 
+    def test_insert_at_index(self):
+        """Test the correct insertion at a specific index."""
+        self.dll.insert_at_begin(10)
+        self.dll.insert_at_begin(20)
+        self.assertEqual(self.dll.get_size(), 2)
+
+        self.dll.insert_at_index(15, 1)
+        self.assertEqual(self.dll.get_size(), 3)
+        self.assertEqual(self.dll.root.data, 20)
+        self.assertIsNone(self.dll.root.prevnode)
+        self.assertEqual(self.dll.root.nextnode.data, 15)
+        self.assertEqual(self.dll.root.nextnode.nextnode.data, 10)
+
     def test_get_size(self):
         """Test get the correct size."""
         self.assertEqual(self.dll.get_size(), 0)

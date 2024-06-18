@@ -10,16 +10,16 @@ class Node:
 
     def __init__(self, value: int) -> None:
         """Initialize a Node."""
-        self.data = value
+        self.data: int = value
         self.nextnode: Optional[Node] = None
 
 
 class SinglyLinkedList:
     """Define a Singly Linked List."""
 
-    def __init__(self, root: Optional[Node] = None) -> None:
+    def __init__(self) -> None:
         """Initialize the Singly Linked List"""
-        self.root: Optional[Node] = None
+        self.root: Node = None
 
     def insert_at_begin(self, value: int) -> None:
         """Insert a value at the beginning."""
@@ -36,7 +36,7 @@ class SinglyLinkedList:
         """Insert a value at a specific index."""
         node: Node = Node(value)
         pos: int = 0
-        temp: Optional[Node] = self.root
+        temp: Node = self.root
 
         if index == 0:
             self.insert_at_begin(value)
@@ -47,20 +47,20 @@ class SinglyLinkedList:
             pos += 1
 
         if temp is None:
-            return 'Index not found.'
+            return "Index not found."
 
         node.nextnode = temp.nextnode
         temp.nextnode = node
 
     def insert_at_end(self, value: int) -> None:
         """Insert a value at the end."""
-        node: Optional[Node] = Node(value)
+        node: Node = Node(value)
 
         if self.root is None:
             self.root = node
             return
 
-        temp: Optional[Node] = self.root
+        temp: Node = self.root
         while temp.nextnode:
             temp = temp.nextnode
 
@@ -68,7 +68,7 @@ class SinglyLinkedList:
 
     def update_at_index(self, value: int, index: int) -> Optional[str]:
         """Update a value at a specific index."""
-        temp: Optional[Node] = self.root
+        temp: Node = self.root
         pos: int = 0
 
         while temp and pos < index:
@@ -76,7 +76,7 @@ class SinglyLinkedList:
             pos += 1
 
         if temp is None:
-            return 'Index not found.'
+            return "Index not found."
 
         temp.data = value
 
@@ -96,8 +96,8 @@ class SinglyLinkedList:
             self.root = None
             return
 
-        temp: Optional[Node] = self.root
-        while temp.nextnode and temp.nextnode.nextnode:
+        temp: Node = self.root
+        while temp.nextnode.nextnode:
             temp = temp.nextnode
 
         temp.nextnode = None
@@ -107,7 +107,7 @@ class SinglyLinkedList:
         if self.root is None:
             return
 
-        temp: Optional[Node] = self.root
+        temp: Node = self.root
         if temp.data == value:
             self.root = self.root.nextnode
             return
@@ -116,7 +116,7 @@ class SinglyLinkedList:
             temp = temp.nextnode
 
         if temp.nextnode is None:
-            return 'Value not found.'
+            return "Value not found."
 
         temp.nextnode = temp.nextnode.nextnode
 
@@ -125,7 +125,7 @@ class SinglyLinkedList:
         if self.root is None:
             return
 
-        temp: Optional[Node] = self.root
+        temp: Node = self.root
         pos: int = 0
 
         if index == 0:
@@ -137,7 +137,7 @@ class SinglyLinkedList:
             pos += 1
 
         if temp is None or temp.nextnode is None:
-            return 'Index not found.'
+            return "Index not found."
 
         temp.nextnode = temp.nextnode.nextnode
 
