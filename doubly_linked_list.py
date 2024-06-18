@@ -22,6 +22,18 @@ class DoublyLinkedList:
         """Initialize the Doubly Linked List."""
         self.root = Optional[Node] = None
 
+    def insert_at_begin(self, value) -> None:
+        """Insert a value at the beginning."""
+        node: Node = Node(value)
+
+        if self.root is None:
+            self.root = node
+            return
+
+        node.nextnode = self.root
+        self.root.prevnode = node
+        self.root = node
+
     def get_size(self) -> int:
         """Get the size/length of a Doubly Linked List."""
         size: int = 0
