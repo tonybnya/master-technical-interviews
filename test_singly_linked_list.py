@@ -3,7 +3,7 @@ Tests for Singly Linked List implementation.
 """
 
 import unittest
-from singly_linked_list import Node, SinglyLinkedList
+from singly_linked_list import SinglyLinkedList
 
 
 class TestSinglyLinkedList(unittest.TestCase):
@@ -14,12 +14,12 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.sll = SinglyLinkedList()
 
     def test_is_initialized(self) -> None:
-        """Test for correct initialization."""
+        """Test the correct initialization."""
         self.assertIsNone(self.sll.root)
         self.assertEqual(self.sll.get_size(), 0)
 
     def test_insert_at_begin(self):
-        """Test for correct insertion at the beginning."""
+        """Test the correct insertion at the beginning."""
         self.sll.insert_at_begin(10)
         self.sll.insert_at_begin(20)
 
@@ -28,7 +28,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 2)
 
     def test_insert_at_end(self):
-        """Test for correct insertion at the end."""
+        """Test the correct insertion at the end."""
         self.sll.insert_at_end(30)
         self.sll.insert_at_end(40)
 
@@ -37,7 +37,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 2)
 
     def test_insert_at_index(self):
-        """Test for correct insertion at a specific index."""
+        """Test the correct insertion at a specific index."""
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(30)
         self.assertEqual(self.sll.get_size(), 2)
@@ -52,7 +52,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(output, 'Index not found.')
 
     def test_update_at_index(self):
-        """Test for correct update at a specific index."""
+        """Test the correct update at a specific index."""
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(20)
@@ -67,7 +67,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(output, 'Index not found.')
 
     def test_remove_first_node(self):
-        """Test for correct remove of the first node."""
+        """Test the correct remove of the first node."""
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(20)
 
@@ -79,7 +79,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 1)
 
     def test_remove_last_node(self):
-        """Tesf for correct remove of the last node."""
+        """Tesf the correct remove of the last node."""
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(20)
         self.sll.insert_at_end(30)
@@ -92,7 +92,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 2)
 
     def test_remove_at_index(self):
-        """Test for correct remove at a specific index."""
+        """Test the correct remove at a specific index."""
         self.sll.insert_at_end(10)
         self.sll.insert_at_end(15)
         self.sll.insert_at_end(20)
@@ -107,7 +107,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(output, 'Index not found.')
 
     def test_get_size(self):
-        """Test for get correct size."""
+        """Test the get correct size."""
         self.assertEqual(self.sll.get_size(), 0)
 
         self.sll.insert_at_end(10)
