@@ -107,7 +107,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(output, 'Index not found.')
 
     def test_get_size(self):
-        """Test the get correct size."""
+        """Test get the correct size."""
         self.assertEqual(self.sll.get_size(), 0)
 
         self.sll.insert_at_end(10)
