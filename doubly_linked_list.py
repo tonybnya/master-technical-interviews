@@ -21,3 +21,9 @@ class DoublyLinkedList:
     def __init__(self, root: Optional[Node] = None) -> None:
         """Initialize the Doubly Linked List."""
         self.root = Optional[Node] = None
+
+    def get_size(self) -> int:
+        """Get the size/length of a Doubly Linked List."""
+        size: int = 0
+
+        return size

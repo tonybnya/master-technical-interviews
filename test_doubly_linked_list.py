@@ -16,3 +16,8 @@ class TestDoublyLinkedList(unittest.TestCase):
     def test_is_initialized(self) -> None:
         """Test the correct initialization."""
         self.assertIsNone(self.dll.root)
+        self.assertEqual(self.dll.get_size(), 0)
+
+    # def test_get_size(self):
+    #     """Test get the correct size."""
+    #     self.assertEqual(self.dll.get_size(), 0)
