@@ -37,5 +37,9 @@ class DoublyLinkedList:
     def get_size(self) -> int:
         """Get the size/length of a Doubly Linked List."""
         size: int = 0
+        temp = self.root
+        while temp:
+            size += 1
+            temp = temp.nextnode
 
         return size
