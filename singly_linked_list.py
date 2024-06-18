@@ -6,23 +6,23 @@ from typing import Optional
 
 
 class Node:
-    """Definition of a Node."""
+    """Define a Node for a Singly Linked List."""
 
     def __init__(self, value: int) -> None:
-        """Initialization of a Node."""
+        """Initialize a Node."""
         self.data = value
         self.nextnode: Optional[Node] = None
 
 
 class SinglyLinkedList:
-    """Definition of a Singly Linked List."""
+    """Define a Singly Linked List."""
 
     def __init__(self, root: Optional[Node] = None) -> None:
         """Initialize the Singly Linked List"""
         self.root: Optional[Node] = None
 
     def insert_at_begin(self, value: int):
-        """Method to insert a value at the beginning."""
+        """Insert a value at the beginning."""
         node: Node = Node(value)
 
         if self.root is None:
@@ -33,7 +33,7 @@ class SinglyLinkedList:
         self.root = node
 
     def insert_at_index(self, value: int, index: int) -> Optional[str]:
-        """Method to insert a value at a specific index."""
+        """Insert a value at a specific index."""
         node: Node = Node(value)
         pos: int = 0
         temp: Optional[Node] = self.root
@@ -53,7 +53,7 @@ class SinglyLinkedList:
         temp.nextnode = node
 
     def insert_at_end(self, value: int) -> None:
-        """Method to insert a value at the end."""
+        """Insert a value at the end."""
         node: Optional[Node] = Node(value)
 
         if self.root is None:
@@ -67,7 +67,7 @@ class SinglyLinkedList:
         temp.nextnode = node
 
     def update_at_index(self, value: int, index: int) -> Optional[str]:
-        """Method to update a value at a specific index."""
+        """Update a value at a specific index."""
         temp: Optional[Node] = self.root
         pos: int = 0
 
@@ -81,14 +81,14 @@ class SinglyLinkedList:
         temp.data = value
 
     def remove_first_node(self) -> None:
-        """Method to remove the first node."""
+        """Remove the first node."""
         if self.root is None:
             return
 
         self.root = self.root.nextnode
 
     def remove_last_node(self) -> None:
-        """Method to remove the last node."""
+        """Remove the last node."""
         if self.root is None:
             return
 
@@ -103,7 +103,7 @@ class SinglyLinkedList:
         temp.nextnode = None
 
     def remove_node(self, value: int) -> Optional[str]:
-        """Method to remove a node containing a specific value."""
+        """Remove a node containing a specific value."""
         if self.root is None:
             return
 
@@ -121,7 +121,7 @@ class SinglyLinkedList:
         temp.nextnode = temp.nextnode.nextnode
 
     def remove_at_index(self, index: int) -> Optional[str]:
-        """Method to remove a node at a specific index."""
+        """Remove a node at a specific index."""
         if self.root is None:
             return
 
@@ -142,7 +142,7 @@ class SinglyLinkedList:
         temp.nextnode = temp.nextnode.nextnode
 
     def get_size(self) -> int:
-        """Method to get the size/length of a Singly Linked List."""
+        """Get the size/length of a Singly Linked List."""
         size = 0
         temp = self.root
         while temp:
@@ -151,7 +151,7 @@ class SinglyLinkedList:
         return size
 
     def print_sll(self) -> None:
-        """Method to print a Singly Linked List."""
+        """Print a Singly Linked List."""
         temp: Optional[Node] = self.root
         while temp:
             print(f"[{temp.data}]->", end="")
