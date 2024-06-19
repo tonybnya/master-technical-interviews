@@ -53,12 +53,13 @@ if __name__ == "__main__":
     print(f"size = {m.size()}")  # should print size = 1
 
     print(f"get {m.get(0)}")  # should print get 0
+    print(f"get {m.get(10)}")  # should print get -1
 
     m.put(1, 1)
     m.put(2, 2)
     print(f"size = {m.size()}")  # should print size = 3
 
-    print(f"3 in m? {m.contains_key(3)}")  # should print 3 in m? False
+    print(f"10 in m? {m.contains_key(10)}")  # should print 10 in m? False
     print(f"2 in m? {m.contains_key(2)}")  # should print 2 in m? True
 
     m.put(3, 3)
@@ -68,3 +69,9 @@ if __name__ == "__main__":
     print(f"size = {m.size()}")  # should print size = 7
 
     m.print_map()
+
+    m.remove(6)  # 6 is an existing key
+    print(f"size = {m.size()}")  # should print size = 6
+
+    m.remove(10)  # 10 is an non-existing key
+    print(f"size = {m.size()}")  # should print size = 6
