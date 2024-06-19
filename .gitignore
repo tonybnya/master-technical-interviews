@@ -1,3 +1,4 @@
 *.mp4
 Timestamps.txt
 __pycache__/
+.DS_Store
