@@ -35,11 +35,11 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.assertEqual(self.dll.get_size(), 2)
 
         self.dll.insert_at_index(15, 1)
-        self.assertEqual(self.dll.get_size(), 3)
         self.assertEqual(self.dll.root.data, 20)
         self.assertIsNone(self.dll.root.prevnode)
         self.assertEqual(self.dll.root.nextnode.data, 15)
         self.assertEqual(self.dll.root.nextnode.nextnode.data, 10)
+        self.assertEqual(self.dll.get_size(), 3)
 
     def test_get_size(self):
         """Test get the correct size."""
