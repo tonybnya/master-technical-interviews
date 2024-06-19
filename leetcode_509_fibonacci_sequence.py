@@ -1,10 +1,13 @@
 # pylint: disable=all
 
-from typing import Dict, Union
+from typing import Dict
 
 
-def fib_memo(n: int, cache: Dict = {}) -> int:
+def fib_memo(n: int, cache: Dict = None) -> int:
     """Helper function using memoization."""
+    if cache is None:
+        cache = {}
+
     if n < 0 or not isinstance(n, int):
         return -1
 
@@ -18,6 +21,16 @@ def fib_memo(n: int, cache: Dict = {}) -> int:
 
     return cache[n]
 
+
 def fibonacci(n: int) -> int:
     """Calculate Fibonacci sequence of n."""
     return fib_memo(n)
+
+
+if __name__ == "__main__":
+    with open("input.txt") as file:
+        n: int = int(file.read())
+
+    print(n)
+    print(type(n))
+    print(fibonacci(n))
