@@ -3,8 +3,9 @@ Tests for Stack implementation using list.
 """
 
 import unittest
-from stack import Stack
 from typing import Iterable
+
+from stack import Stack
 
 
 class TestStack(unittest.TestCase):
