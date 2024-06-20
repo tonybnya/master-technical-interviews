@@ -2,8 +2,6 @@
 Implementation of a Stack using a list.
 """
 
-from typing import Iterable
-
 
 class Stack:
     """Define a stack."""
