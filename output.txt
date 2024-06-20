@@ -1,35 +1,55 @@
-Input: s = "()"
-Expected Output = True
-My Answer = True
-isValid	 passed! ✅
+Input: x = "4"
+Expected Output = 2
+My Answer = 2
+mySqrt	 passed! ✅
 
-Input: s = "()[]{}"
-Expected Output = True
-My Answer = True
-isValid	 passed! ✅
+Input: x = "8"
+Expected Output = 2
+My Answer = 2
+mySqrt	 passed! ✅
 
-Input: s = "(]"
-Expected Output = False
-My Answer = False
-isValid	 passed! ✅
+Input: x = "9"
+Expected Output = 3
+My Answer = 3
+mySqrt	 passed! ✅
 
-Input: s = ")("
-Expected Output = False
-My Answer = False
-isValid	 passed! ✅
+Input: x = "16"
+Expected Output = 4
+My Answer = 4
+mySqrt	 passed! ✅
 
-Input: s = "]["
-Expected Output = False
-My Answer = False
-isValid	 passed! ✅
+Input: x = "25"
+Expected Output = 5
+My Answer = 5
+mySqrt	 passed! ✅
 
-Input: s = "}{"
-Expected Output = False
-My Answer = False
-isValid	 passed! ✅
+Input: x = "36"
+Expected Output = 6
+My Answer = 6
+mySqrt	 passed! ✅
 
-Input: s = "([)]"
-Expected Output = False
-My Answer = False
-isValid	 passed! ✅
+Input: x = "49"
+Expected Output = 7
+My Answer = 7
+mySqrt	 passed! ✅
+
+Input: x = "64"
+Expected Output = 8
+My Answer = 8
+mySqrt	 passed! ✅
+
+Input: x = "81"
+Expected Output = 9
+My Answer = 9
+mySqrt	 passed! ✅
+
+Input: x = "100"
+Expected Output = 10
+My Answer = 10
+mySqrt	 passed! ✅
+
+Input: x = "121"
+Expected Output = 11
+My Answer = 11
+mySqrt	 passed! ✅
 
