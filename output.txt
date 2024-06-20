@@ -1,18 +1,25 @@
-size = 0
-size = 1
-size = 1
-get 0
-get -1
-size = 3
-10 in m? False
-2 in m? True
-size = 7
-|0:0|
-|1:1|
-|2:2|
-|3:3|
-|4:4|
-|5:5|
-|6:6|
-size = 6
-size = 6
+Input: s = "abccbaacz"
+Expected Output = "c"
+My Answer = "c"
+first_letter_to_appear_twice	 passed! ✅
+
+Input: s = "abcdd"
+Expected Output = "d"
+My Answer = "d"
+first_letter_to_appear_twice	 passed! ✅
+
+Input: s = "aaaaaa"
+Expected Output = "a"
+My Answer = "a"
+first_letter_to_appear_twice	 passed! ✅
+
+Input: s = "abcdabcd"
+Expected Output = "a"
+My Answer = "a"
+first_letter_to_appear_twice	 passed! ✅
+
+Input: s = "abccba"
+Expected Output = "c"
+My Answer = "c"
+first_letter_to_appear_twice	 passed! ✅
+
