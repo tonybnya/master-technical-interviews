@@ -1,25 +1,35 @@
-Input: s = "abccbaacz"
-Expected Output = "c"
-My Answer = "c"
-first_letter_to_appear_twice	 passed! ✅
+Input: s = "()"
+Expected Output = True
+My Answer = True
+isValid	 passed! ✅
 
-Input: s = "abcdd"
-Expected Output = "d"
-My Answer = "d"
-first_letter_to_appear_twice	 passed! ✅
+Input: s = "()[]{}"
+Expected Output = True
+My Answer = True
+isValid	 passed! ✅
 
-Input: s = "aaaaaa"
-Expected Output = "a"
-My Answer = "a"
-first_letter_to_appear_twice	 passed! ✅
+Input: s = "(]"
+Expected Output = False
+My Answer = False
+isValid	 passed! ✅
 
-Input: s = "abcdabcd"
-Expected Output = "a"
-My Answer = "a"
-first_letter_to_appear_twice	 passed! ✅
+Input: s = ")("
+Expected Output = False
+My Answer = False
+isValid	 passed! ✅
 
-Input: s = "abccba"
-Expected Output = "c"
-My Answer = "c"
-first_letter_to_appear_twice	 passed! ✅
+Input: s = "]["
+Expected Output = False
+My Answer = False
+isValid	 passed! ✅
+
+Input: s = "}{"
+Expected Output = False
+My Answer = False
+isValid	 passed! ✅
+
+Input: s = "([)]"
+Expected Output = False
+My Answer = False
+isValid	 passed! ✅
 

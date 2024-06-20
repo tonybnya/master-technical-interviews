@@ -1,5 +1,7 @@
-abccbaacz c
-abcdd d
-aaaaaa a
-abcdabcd a
-abccba c
+() 1
+()[]{} 1
+(] 0
+)( 0
+][ 0
+}{ 0
+([)] 0
