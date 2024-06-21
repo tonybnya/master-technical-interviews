@@ -3,7 +3,8 @@ Tests for Singly Linked List implementation.
 """
 
 import unittest
-from singly_linked_list import SinglyLinkedList
+
+from dsa_singly_linked_list import SinglyLinkedList
 
 
 class TestSinglyLinkedList(unittest.TestCase):
@@ -49,7 +50,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 3)
 
         output = self.sll.insert_at_index(1, 10)
-        self.assertEqual(output, 'Index not found.')
+        self.assertEqual(output, "Index not found.")
 
     def test_update_at_index(self):
         """Test the correct update at a specific index."""
@@ -64,7 +65,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 3)
 
         output = self.sll.update_at_index(1, 10)
-        self.assertEqual(output, 'Index not found.')
+        self.assertEqual(output, "Index not found.")
 
     def test_remove_first_node(self):
         """Test the correct remove of the first node."""
@@ -104,7 +105,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual(self.sll.get_size(), 2)
 
         output = self.sll.remove_at_index(5)
-        self.assertEqual(output, 'Index not found.')
+        self.assertEqual(output, "Index not found.")
 
     def test_get_size(self):
         """Test get the correct size."""

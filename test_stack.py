@@ -5,7 +5,7 @@ Tests for Stack implementation using list.
 import unittest
 from typing import Iterable
 
-from stack import Stack
+from dsa_stack import Stack
 
 
 class TestStack(unittest.TestCase):

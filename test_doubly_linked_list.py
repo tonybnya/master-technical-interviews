@@ -3,7 +3,8 @@ Tests for Doubly Linked List implementation.
 """
 
 import unittest
-from doubly_linked_list import DoublyLinkedList
+
+from dsa_doubly_linked_list import DoublyLinkedList
 
 
 class TestDoublyLinkedList(unittest.TestCase):
