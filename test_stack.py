@@ -40,7 +40,10 @@ class TestStack(unittest.TestCase):
         self.stack.push(2)
         self.stack.push(3)
 
+        self.assertEqual(self.stack.length(), 3)
+
         self.assertEqual(self.stack.peek(), 3)
+        self.assertEqual(self.stack.length(), 3)
 
     def test_pop(self) -> None:
         """Test pop method."""
@@ -51,6 +54,7 @@ class TestStack(unittest.TestCase):
         self.stack.push(5)
 
         self.assertEqual(self.stack.length(), 5)
+
         self.assertEqual(self.stack.pop(), 5)
         self.assertEqual(self.stack.length(), 4)
 
@@ -61,6 +65,11 @@ class TestStack(unittest.TestCase):
             self.stack.push(i)
 
         self.assertEqual(self.stack.length(), 10)
+
         last: int = self.stack.pop()
         second_last: int = self.stack.pop()
+
+        self.assertEqual(last, 9)
+        self.assertEqual(second_last, 8)
+
         self.assertEqual(self.stack.length(), 8)
