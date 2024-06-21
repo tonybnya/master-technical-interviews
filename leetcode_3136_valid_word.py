@@ -27,6 +27,7 @@ def isValid(word: str) -> bool:
 
     has_vowel: bool = False
     has_consonant: bool = False
+    has_digit: bool = False
 
     for char in word:
         if char in vowels:
@@ -35,10 +36,14 @@ def isValid(word: str) -> bool:
         if char in consonants:
             has_consonant = True
 
-        if char not in vowels + consonants + digits:
-            return False
+        if char in digits:
+            has_digit = True
 
-    return has_vowel and has_consonant
+        # if char not in vowels + consonants + digits:
+        #     return False
+
+    return has_vowel and has_consonant and has_digit
+    # return has_vowel and has_consonant
 
 
 def tester(func: Callable[[str], bool], word: str, output: int) -> None:
