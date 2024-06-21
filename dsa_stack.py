@@ -2,6 +2,8 @@
 Implementation of a Stack using a list.
 """
 
+from typing import Iterable
+
 
 class Stack:
     """Define a stack."""
@@ -38,3 +40,13 @@ class Stack:
             print(f"|{self.stack[i]}|")
             i += 1
         print()
+
+
+if __name__ == "__main__":
+    s: Stack = Stack()
+    rng: Iterable = range(10)
+
+    for i in rng:
+        s.push(i)
+
+    s.print_stack()
