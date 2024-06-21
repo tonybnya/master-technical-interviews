@@ -2,6 +2,8 @@
 Implementation of a Queue using a list.
 """
 
+from typing import Iterable
+
 
 class Queue:
     """Define a Queue."""
@@ -35,6 +37,16 @@ class Queue:
         n: int = self.length()
         i: int = 0
         while i < n:
-            print(f"|{self.queue[i]}|", end="")
+            print(f"{self.queue[i]}|", end="")
             i += 1
         print()
+
+
+if __name__ == "__main__":
+    q: Queue = Queue()
+    rng: Iterable = range(10)
+
+    for i in rng:
+        q.enqueue(i)
+
+    q.print_queue()
