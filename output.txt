@@ -1,15 +1,10 @@
-Input: s = "Hello World"
-Expected Ouput: 5
-My Answer = 5
-lengthOfLastWord	 passed! ✅
+Input: n = 5
+Expected Output: 10
+My Answer = 10
+smallestEvenMultiple	 passed! ✅
 
-Input: s = "   fly me   to   the moon  "
-Expected Ouput: 4
-My Answer = 4
-lengthOfLastWord	 passed! ✅
-
-Input: s = "luffy is still joyboy"
-Expected Ouput: 6
+Input: n = 6
+Expected Output: 6
 My Answer = 6
-lengthOfLastWord	 passed! ✅
+smallestEvenMultiple	 passed! ✅
 
