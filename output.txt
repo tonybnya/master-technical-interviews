@@ -1,10 +1,10 @@
-Input: n = 5
-Expected Output: 10
-My Answer = 10
-smallestEvenMultiple	 passed! ✅
+Input: haystack = "sadbutsad", needle = "sad"
+Expected Output: 0
+My Answer = 0
+strStr	 passed! ✅
 
-Input: n = 6
-Expected Output: 6
-My Answer = 6
-smallestEvenMultiple	 passed! ✅
+Input: haystack = "leetcode", needle = "leeto"
+Expected Output: -1
+My Answer = -1
+strStr	 passed! ✅
 
