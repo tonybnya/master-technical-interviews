@@ -1,10 +1,15 @@
-Input: haystack = "sadbutsad", needle = "sad"
-Expected Output: 0
-My Answer = 0
-strStr	 passed! ✅
+Input: strs = ['flower', 'flow', 'flight']
+Expected Output: "fl"
+My Answer: "fl"
+longestCommonPrefix	 passed! ✅
 
-Input: haystack = "leetcode", needle = "leeto"
-Expected Output: -1
-My Answer = -1
-strStr	 passed! ✅
+Input: strs = ['dog', 'racecar', 'car']
+Expected Output: ""
+My Answer: ""
+longestCommonPrefix	 passed! ✅
+
+Input: strs = ['']
+Expected Output: ""
+My Answer: ""
+longestCommonPrefix	 passed! ✅
 
