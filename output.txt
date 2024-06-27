@@ -1,15 +1,15 @@
-Input: strs = ['flower', 'flow', 'flight']
-Expected Output: "fl"
-My Answer: "fl"
-longestCommonPrefix	 passed! ✅
+Input: s = "abc", t = "ahbgdc"
+Expected Output: "True"
+My Answer: "True"
+isSubsequence	 passed! ✅
 
-Input: strs = ['dog', 'racecar', 'car']
-Expected Output: ""
-My Answer: ""
-longestCommonPrefix	 passed! ✅
+Input: s = "axc", t = "ahbgdc"
+Expected Output: "False"
+My Answer: "False"
+isSubsequence	 passed! ✅
 
-Input: strs = ['']
-Expected Output: ""
-My Answer: ""
-longestCommonPrefix	 passed! ✅
+Input: s = "ab", t = "baab"
+Expected Output: "True"
+My Answer: "True"
+isSubsequence	 passed! ✅
 
