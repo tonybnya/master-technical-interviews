@@ -1,15 +1,25 @@
-Input: digits = [1, 2, 3]
-Expected Output: [1, 2, 4]
-My Answer: [1, 2, 4]
-plusOne	 passed! ✅
+Input: x = 121
+Expected Output: True
+My Answer: True
+isPalindrome	 passed! ✅
 
-Input: digits = [4, 3, 2, 1]
-Expected Output: [4, 3, 2, 2]
-My Answer: [4, 3, 2, 2]
-plusOne	 passed! ✅
+Input: x = -121
+Expected Output: False
+My Answer: False
+isPalindrome	 passed! ✅
 
-Input: digits = [9]
-Expected Output: [1, 0]
-My Answer: [1, 0]
-plusOne	 passed! ✅
+Input: x = 10
+Expected Output: False
+My Answer: False
+isPalindrome	 passed! ✅
+
+Input: x = 1221
+Expected Output: True
+My Answer: True
+isPalindrome	 passed! ✅
+
+Input: x = 222
+Expected Output: True
+My Answer: True
+isPalindrome	 passed! ✅
 
