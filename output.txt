@@ -1,15 +1,15 @@
-Input: s = "abc", t = "ahbgdc"
-Expected Output: "True"
-My Answer: "True"
-isSubsequence	 passed! ✅
+Input: digits = [1, 2, 3]
+Expected Output: [1, 2, 4]
+My Answer: [1, 2, 4]
+plusOne	 passed! ✅
 
-Input: s = "axc", t = "ahbgdc"
-Expected Output: "False"
-My Answer: "False"
-isSubsequence	 passed! ✅
+Input: digits = [4, 3, 2, 1]
+Expected Output: [4, 3, 2, 2]
+My Answer: [4, 3, 2, 2]
+plusOne	 passed! ✅
 
-Input: s = "ab", t = "baab"
-Expected Output: "True"
-My Answer: "True"
-isSubsequence	 passed! ✅
+Input: digits = [9]
+Expected Output: [1, 0]
+My Answer: [1, 0]
+plusOne	 passed! ✅
 
