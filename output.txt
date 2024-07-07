@@ -1,25 +1,15 @@
-Input: x = 121
-Expected Output: True
-My Answer: True
-isPalindrome	 passed! ✅
+Input: s = "h"
+Expected Output: 104
+My Answer: 104
+scoreOfString	 passed! ✅
 
-Input: x = -121
-Expected Output: False
-My Answer: False
-isPalindrome	 passed! ✅
+Input: s = "hello"
+Expected Output: 13
+My Answer: 13
+scoreOfString	 passed! ✅
 
-Input: x = 10
-Expected Output: False
-My Answer: False
-isPalindrome	 passed! ✅
-
-Input: x = 1221
-Expected Output: True
-My Answer: True
-isPalindrome	 passed! ✅
-
-Input: x = 222
-Expected Output: True
-My Answer: True
-isPalindrome	 passed! ✅
+Input: s = "zaz"
+Expected Output: 50
+My Answer: 50
+scoreOfString	 passed! ✅
 
