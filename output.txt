@@ -1,15 +1,15 @@
-Input: s = "h"
-Expected Output: 104
-My Answer: 104
-scoreOfString	 passed! ✅
+Input: nums = [2, -1, 1]
+Expected Output: 1
+My Answer: 1
+find_closest_number	 passed! ✅
 
-Input: s = "hello"
-Expected Output: 13
-My Answer: 13
-scoreOfString	 passed! ✅
+Input: nums = [-4, -2, 1, 4, 8]
+Expected Output: 1
+My Answer: 1
+find_closest_number	 passed! ✅
 
-Input: s = "zaz"
-Expected Output: 50
-My Answer: 50
-scoreOfString	 passed! ✅
+Input: nums = [2, 1, 1, -1, 100000]
+Expected Output: 1
+My Answer: 1
+find_closest_number	 passed! ✅
 
