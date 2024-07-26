@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from typing import Callable
+
 from printer import print_fail, print_pass
 
 
