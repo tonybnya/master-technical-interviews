@@ -1,15 +1,10 @@
-Input: word1 = abc, word2 = pqr
-Expected Ouput: apbqcr
-My Answer: apbqcr
-merge_strings_alternately	 passed! ✅
+Input: nums = [0, 1, 2, 4, 5, 7]
+Expected Output: ['0->2', '4->5', '7']
+My Answer: ['0->2', '4->5', '7']
+summary_ranges	 passed! ✅
 
-Input: word1 = ab, word2 = pqrs
-Expected Ouput: apbqrs
-My Answer: apbqrs
-merge_strings_alternately	 passed! ✅
-
-Input: word1 = abcd, word2 = pq
-Expected Ouput: apbqcd
-My Answer: apbqcd
-merge_strings_alternately	 passed! ✅
+Input: nums = [0, 2, 3, 4, 6, 8, 9]
+Expected Output: ['0', '2->4', '6', '8->9']
+My Answer: ['0', '2->4', '6', '8->9']
+summary_ranges	 passed! ✅
 
